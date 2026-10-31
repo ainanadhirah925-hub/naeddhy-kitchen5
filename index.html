@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>naeddhy kitchen | Nur Aina Nadhirah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🍽️ naeddhy kitchen</h1>
+        <p>Discover Delicious Recipes Every Day!</p>
+
+        <div class="creator">
+            Created by
+            <strong>NUR AINA NADHIRAH</strong>
+        </div>
+
+        <div class="opening-hours">
+            <h3>🕒 opening-hours</h3>
+            <p>open : 8:00 AM</p>
+            <p>closed: 10:00 PM</p>
+            <h4 id="openStatus">Checking...</h4>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="welcome">
+            <h2>👩‍🍳 Welcome to Naeddhy Kitchen!</h2>
+            <p>Search your favourite food and discover new recipes.</p>
+        </section>
+
+        <section class="cuisine-section">
+            <div class="cuisine-heading">
+                <div>
+                    <p class="cuisine-label">TAKE YOUR TASTE BUDS ON A TRIP</p>
+                    <h2>Explore by cuisine</h2>
+                </div>
+                <p class="cuisine-subtitle">Pick a place. Discover a plate.</p>
+            </div>
+
+            <div class="cuisine-grid">
+
+                <button class="cuisine-card" data-area="Malaysian">
+                    <span class="cuisine-code">MY</span>
+                    <span class="cuisine-info">
+                        <strong>Malaysian</strong>
+                        <small>Local favourites</small>
+                    </span>
+                    <span class="cuisine-arrow">↗</span>
+                </button>
+
+                <button class="cuisine-card" data-area="Italian">
+                    <span class="cuisine-code">IT</span>
+                    <span class="cuisine-info">
+                        <strong>Italian</strong>
+                        <small>Pasta & comfort food</small>
+                    </span>
+                    <span class="cuisine-arrow">↗</span>
+                </button>
+
+                <button class="cuisine-card" data-area="Japanese">
+                    <span class="cuisine-code">JP</span>
+                    <span class="cuisine-info">
+                        <strong>Japanese</strong>
+                        <small>Fresh & balanced</small>
+                    </span>
+                    <span class="cuisine-arrow">↗</span>
+                </button>
+
+                <button class="cuisine-card" data-area="Korean">
+                    <span class="cuisine-code">KR</span>
+                    <span class="cuisine-info">
+                        <strong>Korean</strong>
+                        <small>Bold flavours</small>
+                    </span>
+                    <span class="cuisine-arrow">↗</span>
+                </button>
+
+                <button class="cuisine-card" data-area="Indian">
+                    <span class="cuisine-code">IN</span>
+                    <span class="cuisine-info">
+                        <strong>Indian</strong>
+                        <small>Spices & curries</small>
+                    </span>
+                    <span class="cuisine-arrow">↗</span>
+                </button>
+
+                <button class="cuisine-card" data-area="Mexican">
+                    <span class="cuisine-code">MX</span>
+                    <span class="cuisine-info">
+                        <strong>Mexican</strong>
+                        <small>Colourful & vibrant</small>
+                    </span>
+                    <span class="cuisine-arrow">↗</span>
+                </button>
+
+            </div>
+
+            <p class="cuisine-note">
+                Recipe availability depends on the connected recipe database.
+            </p>
+        </section>
+
+        <section class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search food... Example: Chicken, Pasta"
+            >
+            <button id="searchBtn">Search</button>
+        </section>
+
+        <section class="cocktail-section">
+            <h2>🍹 Explore Cocktail Recipes</h2>
+            <p>Discover delicious drinks and cocktail recipes!</p>
+            <button id="cocktailBtn">
+                Explore Cocktails
+            </button>
+        </section>
+
+        <p id="status"></p>
+
+        <section id="recipeList" class="recipe-list"></section>
+
+        <section id="recipeDetail" class="recipe-detail"></section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Naeddhy Kitchen</p>
+        <p>Created by Nur Aina Nadhirah</p>
+    </footer>
+
+    <!-- JavaScript mesti berada sebelum penutup body -->
+    <script src="script.js"></script>
+
+</body>
+</html>
